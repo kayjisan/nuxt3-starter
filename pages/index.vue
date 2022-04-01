@@ -1,5 +1,5 @@
 <template>
-  <div>{{ $t('LandingPage') }}</div>
+  <div>{{ $t('Home') }}</div>
 </template>
 
 <script>

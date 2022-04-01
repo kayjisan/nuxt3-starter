@@ -1,6 +1,6 @@
 import { defineNuxtPlugin } from '#app'
 import { defineRule, configure } from 'vee-validate'
-import { required, email } from '@vee-validate/rules'
+import { required, confirmed, email, min } from '@vee-validate/rules'
 import { localize, setLocale } from '@vee-validate/i18n'
 
 import de from '@vee-validate/i18n/dist/locale/de.json'
@@ -16,7 +16,9 @@ configure({
 });
 
 defineRule('required', required)
+defineRule('confirmed', confirmed)
 defineRule('email', email)
+defineRule('min', min)
 
 export default defineNuxtPlugin((nuxtApp) => {
 

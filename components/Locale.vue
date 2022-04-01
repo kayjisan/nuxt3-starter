@@ -73,8 +73,8 @@ export default {
       // Set i18n locale
       i18n.locale.value = lang
 
-      // Set vee validate locale
-      // setLocale(lang)
+      // Set vee-validate locale
+      setLocale(lang)
 
       // Update locale variable
       locale.value = lang

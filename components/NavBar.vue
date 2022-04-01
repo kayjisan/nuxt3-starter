@@ -95,6 +95,7 @@ export default {
     const navigation = [
       { name: 'Home', to: '/' },
       { name: 'About', to: '/about' },
+      { name: 'Auth', to: '/auth' },
     ];
 
     onMounted(() => {

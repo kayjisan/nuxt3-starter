@@ -2,28 +2,44 @@ import { defineNuxtConfig } from 'nuxt3'
 
 // https://v3.nuxtjs.org/docs/directory-structure/nuxt.config
 export default defineNuxtConfig({
-    buildModules: [
-        '@intlify/nuxt3',
-        '@unocss/nuxt',
-        'nuxt-lodash',
-    ],
+  ssr: true,
 
-    intlify: {
-        localeDir: 'locale',
-        vueI18n: {
-          locale: 'en',
-          fallbackLocale: 'en',
-        }
-    },
+  buildModules: [
+    '@intlify/nuxt3',
+    '@unocss/nuxt',
+    'nuxt-lodash',
+  ],
 
-    unocss: {
-        uno: true,
-        // attributify: true,
-        icons: true,
-        preflight: true,
-    },
-
-    publicRuntimeConfig: {
-        APP_NAME: process.env.APP_NAME || 'Nuxt3 Starter'
+  intlify: {
+    localeDir: 'locale',
+    vueI18n: {
+      locale: 'en',
+      fallbackLocale: 'en',
     }
+  },
+
+  // lodash: {
+  //   prefix: 'use',
+  //   prefixSkip: ['is'],
+  //   exclude: ['map'],
+  //   alias: [
+  //     ['camelCase', 'stringToCamelCase'], // => useStringToCamelCase
+  //     ['kebabCase', 'stringToKebabCase'], // => useStringToKebabCase
+  //   ]
+  // },
+
+  unocss: {
+    uno: true,
+    // attributify: true,
+    icons: true,
+    preflight: true,
+  },
+
+  publicRuntimeConfig: {
+    APP_NAME: process.env.APP_NAME || 'Nuxt3 Starter'
+  },
+
+  build: {
+    transpile: ['@headlessui/vue', '@heroicons/vue']
+  }
 })

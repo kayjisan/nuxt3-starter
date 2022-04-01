@@ -9,8 +9,10 @@
   "D": "",
 
   "E": "",
+  "Email": "Eメール",
 
   "F": "",
+  "ForgotPassword?": "パスワードをお忘れですか？",
 
   "G": "",
 
@@ -24,21 +26,30 @@
   "K": "",
 
   "L": "",
-  "LandingPage": "ランディングページ",
 
   "M": "",
 
   "N": "",
 
   "O": "",
+  "OrContinueWith": "または続行します",
 
   "P": "",
+  "Password": "パスワード",
+  "PasswordConfirmation": "パスワードの確認",
 
   "Q": "",
 
   "R": "",
+  "RememberMe": "私を記憶する",
 
   "S": "",
+  "SignIn": "サインイン",
+  "SignInAccount": "アカウントにサインインする",
+  "SignInWithApple": "Appleでサインイン",
+  "SignInWithGitHub": "GitHubでサインイン",
+  "SignInWithGoogle": "Googleでサインイン",
+  "SignUp": "登録する",
 
   "T": "",
 

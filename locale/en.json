@@ -9,8 +9,10 @@
   "D": "",
 
   "E": "",
+  "Email": "Email",
 
   "F": "",
+  "ForgotPassword?": "Forgot your password?",
 
   "G": "",
 
@@ -24,21 +26,30 @@
   "K": "",
 
   "L": "",
-  "LandingPage": "Landing Page",
 
   "M": "",
 
   "N": "",
 
   "O": "",
+  "OrContinueWith": "Or continue with",
 
   "P": "",
+  "Password": "Password",
+  "PasswordConfirmation": "Password confirmation",
 
   "Q": "",
 
   "R": "",
+  "RememberMe": "Remember me",
 
   "S": "",
+  "SignIn": "Sign in",
+  "SignInAccount": "Sign in to your account",
+  "SignInWithApple": "Sign in with Apple",
+  "SignInWithGitHub": "Sign in with GitHub",
+  "SignInWithGoogle": "Sign in with Google",
+  "SignUp": "Sign up",
 
   "T": "",
 
