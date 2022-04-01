@@ -9,7 +9,7 @@ export default defineNuxtConfig({
     ],
 
     intlify: {
-        localeDir: 'lang',
+        localeDir: 'locale',
         vueI18n: {
           locale: 'en',
           fallbackLocale: 'en',
@@ -22,4 +22,8 @@ export default defineNuxtConfig({
         icons: true,
         preflight: true,
     },
+
+    publicRuntimeConfig: {
+        APP_NAME: process.env.APP_NAME || 'Nuxt3 Starter'
+    }
 })

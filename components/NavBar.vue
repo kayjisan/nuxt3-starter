@@ -13,7 +13,7 @@
           </DisclosureButton>
         </div>
         <div class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
-          <div class="text-indigo-500 flex-shrink-0 flex items-center">// Ai Miyamoto</div>
+          <div class="text-indigo-500 flex-shrink-0 flex items-center">{{ config.APP_NAME }}</div>
           <div class="hidden sm:ml-6 sm:flex sm:space-x-8">
             <NuxtLink
               v-for="item in navigation"
@@ -45,9 +45,9 @@
         <template v-for="item in navigation" :key="item.name">
           <DisclosureButton
             :class="
-          item.to === activeRoute
-            ? 'bg-indigo-50 dark:bg-blue-gray-700 border-indigo-500 text-indigo-700 dark:text-indigo-500'
-            : 'border-transparent text-gray-500 hover:bg-gray-50 dark:hover:bg-blue-gray-700 hover:border-gray-300 hover:text-gray-700 dark:hover:text-gray-400'"
+              item.to === activeRoute
+                ? 'bg-indigo-50 dark:bg-blue-gray-700 border-indigo-500 text-indigo-700 dark:text-indigo-500'
+                : 'border-transparent text-gray-500 hover:bg-gray-50 dark:hover:bg-blue-gray-700 hover:border-gray-300 hover:text-gray-700 dark:hover:text-gray-400'"
             class="block w-full border-l-4"
           >
             <NuxtLink
@@ -67,12 +67,8 @@ import {
   Disclosure,
   DisclosureButton,
   DisclosurePanel,
-} from '@headlessui/vue';
-import { BellIcon, MenuIcon, XIcon } from '@heroicons/vue/outline';
-
-const navigation = [
-  { name: 'Home', to: '/' },
-];
+} from '@headlessui/vue'
+import { BellIcon, MenuIcon, XIcon } from '@heroicons/vue/outline'
 
 export default {
   components: {
@@ -85,6 +81,8 @@ export default {
   },
 
   setup() {
+    const config = useRuntimeConfig()
+
     // Define active route
     const route = useRoute()
     const activeRoute = ref(route.path)
@@ -93,67 +91,19 @@ export default {
       activeRoute.value = route.path
     })
 
-    // Cookie for cookie consent
-    let cookieConsent = useCookie('cookieConsent')
-
-    // Cookie for the user preferences
-    const userPreferences = useCookie('userPreferences', { maxAge: 60 * 60 * 24 * 365 })
-    // const userPreferences = useCookie('userPreferences', { expires: 'Wed, 31 Oct 2012 00:00:00 UTC' })
-
-    function updateUserPreferences() {
-      // Update cookie for the user preferences
-      // userPreferences.value = { darkMode, locale }
-    }
-
-    function checkCookieConsent() {
-      // Update cookie for cookie consent
-      cookieConsent = useCookie('cookieConsent')
-
-      // console.log('Check COOKIE CONSENT: ', cookieConsent.value.preferences)
-      if (cookieConsent.value !== undefined && cookieConsent.value.preferences) {
-
-        return true
-      }
-
-      return false
-    }
-
-    // Set default locale
-    // const locale = ref('en')
-    // const selectedLocale = ref(locales.find(x => x.locale === locale.value))
-
-    // Update dark mode and locale variable, if user preferences are exists
-    if (userPreferences.value !== undefined) {
-      locale.value = userPreferences.value.locale
-    }
-
-    // Set app locale
-    // setAppLocale(locale.value, false)
-
-    // function setAppLocale(lang, manuallyTriggered = true) {
-    //   // Set application locale
-    //   i18n.locale.value = lang
-    //   setLocale(lang)
-
-    //   // Update locale variable
-    //   locale.value = lang
-
-    //   // Update selected localization
-    //   selectedLocale.value = locales.find(x => x.locale === lang)
-
-    //   // Check if cookies for preferences are allowed
-    //   if (checkCookieConsent() && manuallyTriggered) {
-    //     // Update cookie for the user preferences
-    //     updateUserPreferences()
-    //   }
-    // }
+    // Navigation
+    const navigation = [
+      { name: 'Home', to: '/' },
+      { name: 'About', to: '/about' },
+    ];
 
     onMounted(() => {
-
+      
     })
 
     return {
       activeRoute,
+      config,
       navigation,
     };
   },

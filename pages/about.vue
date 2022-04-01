@@ -1,15 +1,14 @@
 <template>
-  <div>{{ $t('LandingPage') }}</div>
+  <div>{{ $t('About') }}</div>
 </template>
 
 <script>
 definePageMeta({
-  layout: 'default',
+  // layout: 'default',
 });
 
 export default {
   setup() {
-
 
     return {}
   }

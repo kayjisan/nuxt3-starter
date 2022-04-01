@@ -7,7 +7,7 @@
 
 <script>
 import { useColorMode, useCycleList } from '@vueuse/core'
-import { MoonIcon, SunIcon } from '@heroicons/vue/outline';
+import { MoonIcon, SunIcon } from '@heroicons/vue/outline'
 
 export default {
   components: {
