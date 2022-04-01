@@ -1,0 +1,127 @@
+{
+  "en": {
+    "date": {
+      "year": "numeric", 
+      "month": "2-digit", 
+      "day": "numeric"
+    },
+    "weekday-date": {
+      "year": "numeric", 
+      "month": "2-digit", 
+      "day": "numeric",
+      "weekday": "short"
+    },
+    "weekday-date2": {
+      "year": "numeric", 
+      "month": "short", 
+      "day": "numeric",
+      "weekday": "short"
+    },
+    "time": {
+      "hour": "numeric", 
+      "minute": "numeric"
+    },
+    "date-time": {
+      "year": "numeric", 
+      "month": "2-digit", 
+      "day": "numeric",
+      "hour": "numeric", 
+      "minute": "numeric"
+    },
+    "short": {
+      "year": "numeric", 
+      "month": "short", 
+      "day": "numeric"
+    },
+    "long": {
+      "year": "numeric", 
+      "month": "short", 
+      "day": "numeric",
+      "weekday": "short", 
+      "hour": "numeric", 
+      "minute": "numeric"
+    }
+  },
+  "ja": {
+    "date": {
+      "year": "numeric", 
+      "month": "2-digit", 
+      "day": "numeric"
+    },
+    "weekday-date": {
+      "year": "numeric", 
+      "month": "2-digit", 
+      "day": "numeric",
+      "weekday": "short"
+    },
+    "time": {
+      "hour": "numeric", 
+      "minute": "numeric"
+    },
+    "date-time": {
+      "year": "numeric", 
+      "month": "2-digit", 
+      "day": "numeric",
+      "hour": "numeric", 
+      "minute": "numeric"
+    },
+    "short": {
+      "year": "numeric", 
+      "month": "short", 
+      "day": "numeric"
+    },
+    "long": {
+      "year": "numeric", 
+      "month": "short", 
+      "day": "numeric",
+      "weekday": "short", 
+      "hour": "numeric", 
+      "minute": "numeric", 
+      "hour12": true
+    }
+  },
+  "de": {
+    "date": {
+      "year": "numeric", 
+      "month": "2-digit", 
+      "day": "numeric"
+    },
+    "weekday-date": {
+      "year": "numeric", 
+      "month": "2-digit", 
+      "day": "numeric",
+      "weekday": "short"
+    },
+    "weekday-date2": {
+      "year": "numeric", 
+      "month": "short", 
+      "day": "numeric",
+      "weekday": "short"
+    },
+    "time": {
+      "hour": "numeric", 
+      "minute": "numeric"
+    },
+    "date-time": {
+      "year": "numeric", 
+      "month": "2-digit", 
+      "day": "numeric",
+      "hour": "numeric", 
+      "minute": "numeric"
+    },
+    "short": {
+      "year": "numeric", 
+      "month": "short", 
+      "day": "numeric"
+    },
+    "long": {
+      "year": "numeric", 
+      "month": "short", 
+      "day": "numeric",
+      "weekday": "short", 
+      "hour": "numeric", 
+      "minute": "numeric", 
+      "hour12": true
+    }
+  }
+}

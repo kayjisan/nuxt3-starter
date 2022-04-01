@@ -1,0 +1,53 @@
+{
+  "en": {
+    "currency": {
+      "style": "currency",
+      "currency": "USD"
+    },
+    "percent": {
+      "style": "percent"
+    },
+    "EUR": {
+      "style": "currency",
+      "currency": "EUR"
+    },
+    "USD": {
+      "style": "currency",
+      "currency": "USD"
+    }
+  },
+  "ja": {
+    "currency": {
+      "style": "currency",
+      "currency": "USD"
+    },
+    "percent": {
+      "style": "percent"
+    },
+    "EUR": {
+      "style": "currency",
+      "currency": "EUR"
+    },
+    "USD": {
+      "style": "currency",
+      "currency": "USD"
+    }
+  },
+  "de": {
+    "currency": {
+      "style": "currency",
+      "currency": "USD"
+    },
+    "percent": {
+      "style": "percent"
+    },
+    "EUR": {
+      "style": "currency",
+      "currency": "EUR"
+    },
+    "USD": {
+      "style": "currency",
+      "currency": "USD"
+    }
+  }
+}
