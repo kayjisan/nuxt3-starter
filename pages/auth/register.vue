@@ -1,8 +1,16 @@
 <template>
   <div class="min-h-full flex flex-col justify-center py-12 sm:px-6 lg:px-8">
     <div class="sm:mx-auto sm:w-full sm:max-w-md">
-      <h2 class="mt-6 text-center text-3xl font-extrabold text-gray-900">{{ $t('SignInAccount') }}</h2>
-      <p class="mt-2 text-center text-sm text-gray-600"></p>
+      <h2 class="mt-6 text-center text-3xl font-extrabold text-gray-900 dark:text-white">{{ $t('SignInAccount') }}</h2>
+      <p class="mt-2 text-center text-sm text-gray-600 dark:text-white">
+        {{ $t('YouHaveAnAccount') }}
+        <NuxtLink
+          to="/auth"
+          class="font-medium text-indigo-600 hover:text-indigo-500"
+        >
+          {{ $t('SignIn') }}
+        </NuxtLink>
+      </p>
     </div>
 
     <div class="mt-8 sm:mx-auto sm:w-full sm:max-w-md">

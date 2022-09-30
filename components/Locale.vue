@@ -18,7 +18,7 @@
     >
       <MenuItems
         v-model="$i18n.locale"
-        class="origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg py-1 bg-white ring-1 ring-black ring-opacity-5 focus:outline-none"
+        class="origin-top-right absolute right-0 mt-2 w-48 rounded-md shadow-lg py-1 bg-white dark:bg-blue-gray-900 ring-1 ring-black dark:ring-gray-600 ring-opacity-5 focus:outline-none"
       >
         <MenuItem v-for="item in locales" :key="item.locale" v-slot="{ active }">
           <a
@@ -26,7 +26,7 @@
             href="#"
             :class="[
               active ? 'bg-gray-100' : '',
-              'block px-4 py-2 text-sm text-gray-700',
+              'block px-4 py-2 text-sm text-gray-700 dark:text-white',
             ]"
           >{{ $t(item.name) }}</a>
         </MenuItem>
@@ -40,7 +40,6 @@ import { usePreferredLanguages } from '@vueuse/core'
 import { useI18n } from 'vue-i18n'
 import { setLocale } from '@vee-validate/i18n'
 import { Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/vue'
-import { MoonIcon, SunIcon } from '@heroicons/vue/outline'
 
 export default {
   components: {
@@ -48,8 +47,6 @@ export default {
     MenuButton, 
     MenuItem, 
     MenuItems,
-    MoonIcon,
-    SunIcon,
   },
 
   setup() {

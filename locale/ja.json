@@ -7,6 +7,7 @@
   "C": "",
 
   "D": "",
+  "DontHaveAnAccount": "まだアカウントをお持ちでない方はこちら",
 
   "E": "",
   "Email": "Eメール",
@@ -37,11 +38,13 @@
   "P": "",
   "Password": "パスワード",
   "PasswordConfirmation": "パスワードの確認",
+  "Pinia": "Pinia",
 
   "Q": "",
 
   "R": "",
   "RememberMe": "私を記憶する",
+  "ResetYourPassword": "パスワードのリセット",
 
   "S": "",
   "SignIn": "サインイン",
@@ -62,6 +65,7 @@
   "X": "",
 
   "Y": "",
+  "YouHaveAnAccount": "アカウントをお持ちですか？",
 
   "Z": ""
   

@@ -34,6 +34,8 @@
 
 * 🦾 [Lodash](https://lodash.com) - A modern JavaScript utility library delivering modularity, performance & extras.
 
+* 🍍 [Pinia](https://pinia.vuejs.org) - State Management via Pinia
+
 * 🎨 [UnoCSS](https://github.com/unocss/unocss) - The instant on-demand Atomic CSS engine.
 
 * 😃 [UnoCSS - Preset-Icons](https://github.com/unocss/unocss/tree/main/packages/preset-icons) - Use any icons with Pure CSS for UnoCSS. We use Iconify as our data source of icons.

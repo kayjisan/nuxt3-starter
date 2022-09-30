@@ -1,11 +1,11 @@
 import { defineNuxtConfig } from 'nuxt3'
 
-// https://v3.nuxtjs.org/docs/directory-structure/nuxt.config
 export default defineNuxtConfig({
   ssr: true,
 
   buildModules: [
     '@intlify/nuxt3',
+    '@pinia/nuxt',
     '@unocss/nuxt',
     'nuxt-lodash',
   ],
@@ -40,6 +40,6 @@ export default defineNuxtConfig({
   },
 
   build: {
-    transpile: ['@headlessui/vue', '@heroicons/vue']
+    // transpile: ['@headlessui/vue', '@heroicons/vue']
   }
 })

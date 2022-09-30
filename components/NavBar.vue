@@ -8,8 +8,8 @@
             class="inline-flex items-center justify-center p-2 rounded-md text-gray-500 dark:text-gray-400 hover:text-gray-600 hover:dark:text-gray-500 hover:bg-gray-100 dark:hover:bg-blue-gray-900 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
           >
             <span class="sr-only">Open main menu</span>
-            <MenuIcon v-if="!open" class="block h-6 w-6" aria-hidden="true" />
-            <XIcon v-else class="block h-6 w-6" aria-hidden="true" />
+            <Bars3Icon v-if="!open" class="block h-6 w-6" aria-hidden="true" />
+            <XMarkIcon v-else class="block h-6 w-6" aria-hidden="true" />
           </DisclosureButton>
         </div>
         <div class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
@@ -68,7 +68,7 @@ import {
   DisclosureButton,
   DisclosurePanel,
 } from '@headlessui/vue'
-import { BellIcon, MenuIcon, XIcon } from '@heroicons/vue/outline'
+import { BellIcon, Bars3Icon, XMarkIcon } from '@heroicons/vue/24/outline'
 
 export default {
   components: {
@@ -76,8 +76,8 @@ export default {
     DisclosureButton,
     DisclosurePanel,
     BellIcon,
-    MenuIcon,
-    XIcon,
+    Bars3Icon,
+    XMarkIcon,
   },
 
   setup() {
@@ -95,7 +95,9 @@ export default {
     const navigation = [
       { name: 'Home', to: '/' },
       { name: 'About', to: '/about' },
-      { name: 'Auth', to: '/auth' },
+      { name: 'Pinia', to: '/pinia' },
+      { name: 'SignIn', to: '/auth' },
+      { name: 'SignUp', to: '/auth/register' },
     ];
 
     onMounted(() => {

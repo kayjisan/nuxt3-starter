@@ -18,8 +18,7 @@ export default {
   setup() {
 
     onMounted(() => {
-      console.log('WINDOW: ', window)
-      console.log('WINDOW OPENER: ', window.opener)
+
     })
 
     return {}

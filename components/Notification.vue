@@ -36,7 +36,7 @@
               <div class="ml-4 flex-shrink-0 flex">
                 <button @click="remove(notification.id)" class="bg-white rounded-md inline-flex text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
                   <span class="sr-only">Close</span>
-                  <XIcon class="h-5 w-5" aria-hidden="true" />
+                  <XMarkIcon class="h-5 w-5" aria-hidden="true" />
                 </button>
               </div>
             </div>
@@ -49,8 +49,8 @@
 
 <script>
 import { ref } from 'vue'
-import { CheckCircleIcon, ExclamationCircleIcon, InformationCircleIcon, XCircleIcon } from '@heroicons/vue/outline'
-import { XIcon } from '@heroicons/vue/solid'
+import { CheckCircleIcon, ExclamationCircleIcon, InformationCircleIcon, XCircleIcon } from '@heroicons/vue/24/outline'
+import { XMarkIcon } from '@heroicons/vue/24/solid'
 
 let count = 0
 const generateId = () => {
@@ -88,7 +88,7 @@ export default {
     ExclamationCircleIcon, 
     InformationCircleIcon,
     XCircleIcon,
-    XIcon,
+    XMarkIcon,
   },
 
   setup() {

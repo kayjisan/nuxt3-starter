@@ -1,9 +1,15 @@
 <template>
   <div class="min-h-full flex flex-col justify-center py-12 sm:px-6 lg:px-8">
     <div class="sm:mx-auto sm:w-full sm:max-w-md">
-      <h2 class="mt-6 text-center text-3xl font-extrabold text-gray-900">{{ $t('SignInAccount') }}</h2>
-      <p class="mt-2 text-center text-sm text-gray-600">
-
+      <h2 class="mt-6 text-center text-3xl font-extrabold text-gray-900 dark:text-white">{{ $t('SignInAccount') }}</h2>
+      <p class="mt-2 text-center text-sm text-gray-600 dark:text-gray-400">
+        {{ $t('DontHaveAnAccount') }}
+        <NuxtLink
+          to="/auth/register"
+          class="font-medium text-indigo-600 hover:text-indigo-500"
+        >
+          {{ $t('SignUp') }}
+        </NuxtLink>
       </p>
     </div>
 
@@ -40,7 +46,7 @@
             <div class="flex items-center">
               <input
                 id="remember-me"
-                name="remember-me"
+                name="remember_me"
                 type="checkbox"
                 class="h-4 w-4 dark:bg-blue-gray-900 text-indigo-600 focus:ring-indigo-500 border-gray-300 dark:border-gray-600 rounded"
               />
@@ -49,7 +55,7 @@
 
             <div class="text-sm">
               <NuxtLink
-                to="/auth/register"
+                to="/auth/reset"
                 class="font-medium text-indigo-600 hover:text-indigo-500"
               >{{ $t('ForgotPassword?') }}</NuxtLink>
             </div>

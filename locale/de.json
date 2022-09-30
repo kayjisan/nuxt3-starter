@@ -7,6 +7,7 @@
   "C": "",
 
   "D": "",
+  "DontHaveAnAccount": "Sie haben noch kein Konto?",
 
   "E": "",
   "Email": "E-Mail",
@@ -37,11 +38,13 @@
   "P": "",
   "Password": "Passwort",
   "PasswordConfirmation": "Passwortbestätigung",
+  "Pinia": "Pinia",
 
   "Q": "",
 
   "R": "",
   "RememberMe": "Merken",
+  "ResetYourPassword": "Passwort zurücksetzen",
 
   "S": "",
   "SignIn": "Anmelden",
@@ -62,6 +65,7 @@
   "X": "",
 
   "Y": "",
+  "YouHaveAnAccount": "Sie haben bereits ein Konto?",
 
   "Z": ""
   
